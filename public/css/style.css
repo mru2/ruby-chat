@@ -1,0 +1,15 @@
+.sidebar{ margin-top: 20%; }
+
+#chatroom{
+  margin: 40px 0px;
+  border: 1px solid #D1D1D1;
+  border-radius: 4px;
+  height: 400px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+#chatroom p{
+  padding: 0px 20px;
+  margin-top: 1em;
+}

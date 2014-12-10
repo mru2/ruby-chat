@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Chatroom</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="row">
+
+      <div class="three columns sidebar">
+        <h4>Chat demo</h4>
+      </div>
+
+      <div class="nine columns">
+
+        <div id="chatroom">
+        </div>
+
+        <form action="/message" method="post">
+          <input type="text" class="u-full-width" name="message" placeholder="Type your message"></input>
+          <input type="submit" class="button-primary" style="float:right;" value="Send"/>
+        </form>
+        
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
