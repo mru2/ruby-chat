@@ -3,7 +3,7 @@ require './app.rb'
 
 use Rack::TryStatic,
   root: 'public',
-  urls: %w[/],
+  urls: %w[/css /js],
   try: ['.html', 'index.html', '/index.html']
 
 run App
