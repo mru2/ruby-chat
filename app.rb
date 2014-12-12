@@ -32,10 +32,10 @@ class App < Sinatra::Base
 
 
   post '/post_message' do
-    puts "New message : #{params[:message]}"
+    puts "New message from : #{params[:name]} : #{params[:text]}"
 
     settings.users.each do |connection|
-      connection << message(text: params[:message])
+      connection << message(from: params[:name], text: params[:text])
     end
 
     halt 200

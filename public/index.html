@@ -20,15 +20,19 @@
 
       <div class="three columns sidebar">
         <h4>Chat demo</h4>
+        <form id="connect">
+          <input id="name" placeholder="Your name" type="text"></input>
+          <button class="button-primary" id="connect">Connect</button>
+        </form>
       </div>
 
-      <div class="nine columns">
+      <div class="nine columns" id="chat" style="display:none;">
 
         <div id="chatroom">
         </div>
 
-        <form action="/message" method="post">
-          <input type="text" class="u-full-width" name="message" placeholder="Type your message"></input>
+        <form action="/post_message" method="post" id="message">
+          <input type="text" class="u-full-width" name="message" placeholder="Type your message" id="message-text"></input>
           <input type="submit" class="button-primary" style="float:right;" value="Send"/>
         </form>
         
